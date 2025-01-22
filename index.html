@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css" lang="scss" />
+  </head>
+  <body>
+    <div id="game-container">
+      <div id="start-screen">
+        <h1>Classic Snake Game - By Soufiano Dev</h1>
+        <button id="start-button">Start Game</button>
+        <div id="score">Score: 0</div>
+      </div>
+      <div id="game-score">Game Score: 0</div>
+      <div id="game-board"></div>
+      <div id="game-over-dialog">
+        <h2>Game Over!</h2>
+        <p>Final Score: <span id="final-score">0</span></p>
+        <button id="restart-button">Play Again</button>
+        <button id="main-menu-button">Main Menu</button>
+      </div>
+    </div>
+
+    <!-- Mobile Controls -->
+    <div id="mobile-controls">
+      <button id="up" onclick="changeDirection('up')">&#8593;</button>
+      <button id="left" onclick="changeDirection('left')">&#8592;</button>
+      <button id="down" onclick="changeDirection('down')">&#8595;</button>
+      <button id="right" onclick="changeDirection('right')">&#8594;</button>
+    </div>
+
+    <script src="./scripts/game.js"></script>
+  </body>
+</html>
