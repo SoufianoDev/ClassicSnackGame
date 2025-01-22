@@ -225,6 +225,7 @@ function drawGame() {
       wormElement.style.gridColumnStart = segment.x + 1;
       wormElement.style.gridRowStart = segment.y + 1;
       gameBoard.appendChild(wormElement);
+      
     });
   }
 }
