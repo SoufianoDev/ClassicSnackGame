@@ -1,1 +1,1 @@
-# Powered By Ai (Deepseek Test)
+# AI DeepSeek AI Test + some personal effort
